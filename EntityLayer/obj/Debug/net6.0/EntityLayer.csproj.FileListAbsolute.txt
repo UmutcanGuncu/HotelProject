@@ -1,0 +1,14 @@
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/bin/Debug/net6.0/EntityLayer.deps.json
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/bin/Debug/net6.0/EntityLayer.runtimeconfig.json
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/bin/Debug/net6.0/EntityLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/bin/Debug/net6.0/EntityLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfo.cs
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/refint/EntityLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/EntityLayer.genruntimeconfig.cache
+/Users/umutcanguncu/Projects/HotelProject/EntityLayer/obj/Debug/net6.0/ref/EntityLayer.dll

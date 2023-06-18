@@ -1,0 +1,17 @@
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.deps.json
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.runtimeconfig.json
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/EntityLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/bin/Debug/net6.0/EntityLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.AssemblyReference.cache
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.AssemblyInfo.cs
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.CopyComplete
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/refint/DataAccessLayer.dll
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.genruntimeconfig.cache
+/Users/umutcanguncu/Projects/HotelProject/DataAccessLayer/obj/Debug/net6.0/ref/DataAccessLayer.dll
