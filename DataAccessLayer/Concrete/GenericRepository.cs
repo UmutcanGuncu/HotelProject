@@ -19,7 +19,7 @@ namespace DataAccessLayer.Concrete
             _context.SaveChanges();
         }
 
-        public T GetById(int id)
+        public T GetById(Guid id)
         {
             return _context.Set<T>().Find(id);
         }

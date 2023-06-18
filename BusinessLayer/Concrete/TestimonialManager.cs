@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _testimonialDAL.Delete(t);
         }
 
-        public Testimonial GetById(int id)
+        public Testimonial GetById(Guid id)
         {
             return _testimonialDAL.GetById(id);
         }

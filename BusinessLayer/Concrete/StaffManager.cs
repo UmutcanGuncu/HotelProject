@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _staffDal.Delete(t);
         }
 
-        public Staff GetById(int id)
+        public Staff GetById(Guid id)
         {
             return _staffDal.GetById(id);
         }

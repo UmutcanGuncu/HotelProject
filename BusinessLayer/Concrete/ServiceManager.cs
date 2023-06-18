@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _servicesDal.Delete(t);
         }
 
-        public Services GetById(int id)
+        public Services GetById(Guid id)
         {
             return _servicesDal.GetById(id);
         }

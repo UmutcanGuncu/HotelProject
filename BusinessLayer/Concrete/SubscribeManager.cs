@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _subscribeDAL.Delete(t);
         }
 
-        public Subscribe GetById(int id)
+        public Subscribe GetById(Guid id)
         {
             return _subscribeDAL.GetById(id);
         }

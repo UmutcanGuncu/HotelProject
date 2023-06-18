@@ -7,7 +7,7 @@ namespace BusinessLayer.Abstract
         void Delete(T t);
         void Update(T t);
         void Insert(T t);
-        T GetById(int id);
+        T GetById(Guid id);
     }
 }
 

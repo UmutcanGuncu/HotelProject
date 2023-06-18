@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _roomDal.Delete(t);
         }
 
-        public Room GetById(int id)
+        public Room GetById(Guid id)
         {
             return _roomDal.GetById(id);
         }
