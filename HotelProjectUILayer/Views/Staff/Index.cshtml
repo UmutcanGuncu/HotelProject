@@ -1,0 +1,20 @@
+﻿@model List<StaffListViewModel>
+
+<table class="table table-bordered">
+    <tr>
+        <th>İsim</th>
+        <th>Görev</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.name</td>
+                <td>@item.title</td>
+                <td><a href="/Staff/UpdateStaff/@item.id" class="btn btn-outline-primary">Güncelle</a></td>
+                <td><a href="/Staff/DeleteStaff/@item.id" class="btn btn-outline-danger">Sil</a></td>
+            </tr>
+        }
+</table>
+<a href="/Staff/AddStaff" class="btn btn-outline-success">Personel Ekle</a>

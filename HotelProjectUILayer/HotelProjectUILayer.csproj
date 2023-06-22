@@ -18,10 +18,30 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.8" />
     <PackageReference Include="Npgsql" Version="6.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.18" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HotelProjectWebApi\HotelProjectWebApi.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Shared\AdminPartialView\" />
+    <None Remove="Views\Staff\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\ServiceDto\" />
+    <None Remove="Mapping\" />
+    <None Remove="Views\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\AdminPartialView\" />
+    <Folder Include="Views\Staff\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\ServiceDto\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Views\Service\" />
   </ItemGroup>
 </Project>

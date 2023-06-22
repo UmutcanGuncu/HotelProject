@@ -1,0 +1,24 @@
+﻿@model StaffAddViewModel
+<form method="post">
+    <div class="form-group">
+        <label>İsim</label>
+        <input type="text" asp-for="name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Görev</label>
+        <input type="text" asp-for="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Instagram Adresi</label>
+        <input type="text" asp-for="instagramUrl" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Twitter Adresi</label>
+        <input type="text" asp-for="twittterUrl" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>İsim</label>
+        <input type="text" asp-for="facebookUrl" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>

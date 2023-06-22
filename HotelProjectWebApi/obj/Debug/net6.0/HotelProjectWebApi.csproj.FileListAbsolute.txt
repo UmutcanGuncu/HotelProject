@@ -48,3 +48,5 @@
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/DataAccessLayer.pdb
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/EntityLayer.pdb
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/DTOLayer.pdb
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/AutoMapper.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

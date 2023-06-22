@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sog6DIKdchYj3knaGFuqEY2LS6Myw/FXH/nY4Pc22oecpjxJHBmRQ1ZljzrBqcPy5ko6z24pv83a7kAuSxMdzA==",
+  "dgSpecHash": "Ca14n/LKwP6Fz8LXsZiX508W3Riu99L1TYS1oJnzX5UzQwDgBEm5WnxGC4T/G6J45431lZhHeRgDCcOY8wC+RQ==",
   "success": true,
   "projectFilePath": "/Users/umutcanguncu/Projects/HotelProject/DTOLayer/DTOLayer.csproj",
   "expectedPackageFiles": [
     "/Users/umutcanguncu/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/umutcanguncu/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.16/microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",
+    "/Users/umutcanguncu/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.16/microsoft.aspnetcore.cryptography.keyderivation.6.0.16.nupkg.sha512",
+    "/Users/umutcanguncu/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.16/microsoft.aspnetcore.identity.entityframeworkcore.6.0.16.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.entityframeworkcore/6.0.16/microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.16/microsoft.entityframeworkcore.abstractions.6.0.16.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.16/microsoft.entityframeworkcore.analyzers.6.0.16.nupkg.sha512",
@@ -16,6 +19,8 @@
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.1/microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.identity.core/6.0.16/microsoft.extensions.identity.core.6.0.16.nupkg.sha512",
+    "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.identity.stores/6.0.16/microsoft.extensions.identity.stores.6.0.16.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/Users/umutcanguncu/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",

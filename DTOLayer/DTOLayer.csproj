@@ -22,4 +22,20 @@
   <ItemGroup>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="DTOS\" />
+    <None Remove="DTOS\StaffDto\" />
+    <None Remove="DTOS\SubscribeDto\" />
+    <None Remove="DTOS\TestimonialDto\" />
+    <None Remove="DTOS\RoomDto\" />
+    <None Remove="DTOS\ServiceDto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOS\" />
+    <Folder Include="DTOS\StaffDto\" />
+    <Folder Include="DTOS\SubscribeDto\" />
+    <Folder Include="DTOS\TestimonialDto\" />
+    <Folder Include="DTOS\RoomDto\" />
+    <Folder Include="DTOS\ServiceDto\" />
+  </ItemGroup>
 </Project>
