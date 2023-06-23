@@ -1,11 +1,12 @@
 ﻿using System;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DataAccessLayer.Context
 {
-	public class HotelContext:DbContext
+	public class HotelContext:IdentityDbContext<AppUser,AppRole,Guid>
 	{
 		public HotelContext(DbContextOptions<HotelContext> options):base(options)
 		{

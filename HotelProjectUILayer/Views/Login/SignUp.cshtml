@@ -1,0 +1,63 @@
+﻿@model SignUpDto
+@section Scripts{
+
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+<div class="login-form-bg h-100">
+    <div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-xl-6">
+                <div class="form-input-content">
+                    <div class="card login-form mb-0">
+                        <div class="card-body pt-5">
+
+                            <a class="text-center" href="index.html"> <h4>Kayıt Olma Sayfası</h4></a>
+                            <div class="alert alert-info" role="alert">
+                                @ViewBag.Deneme
+                            </div>
+                            <form method="post" class="mt-5 mb-5 login-input">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="Name" placeholder="Adınız" required>
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="Surname" placeholder="Soyadınız" required>
+                                    <span asp-validation-for="Surname"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adınız" required>
+                                    <span asp-validation-for="UserName"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Email" class="form-control" placeholder="Email" required>
+                                    <span asp-validation-for="Email"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="PhoneNumber" class="form-control" placeholder="Telefon Numaranız" required>
+                                    <span asp-validation-for="PhoneNumber"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="City" placeholder="Şehir" required>
+                                    <span asp-validation-for="City"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Password" class="form-control" placeholder="Şifre" required>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Şifre Tekrarı" required>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+                                <button class="btn login-form__btn submit w-100">Kayıt Ol</button>
+                            </form>
+                            <p class="mt-5 login-form__footer">Have account <a href="page-login.html" class="text-primary">Sign Up </a> now</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

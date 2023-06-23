@@ -26,7 +26,7 @@ namespace HotelProjectUILayer.Controllers
             var responseMessage = await client.GetAsync("https://localhost:7215/api/Service");
             if(responseMessage.IsSuccessStatusCode)
             {
-                var jsonData = await responseMessage.Content.ReadAsStreamAsync();
+             var jsonData = await responseMessage.Content.ReadAsStreamAsync();
                 var values = JsonSerializer.Deserialize<List<ResultServiceDto>>(jsonData);
                 return View(values);
             }

@@ -1,8 +1,11 @@
 ﻿using System;
+using AutoMapper;
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity;
 
 namespace HotelProjectWebApi.Extensions
 {
@@ -19,7 +22,9 @@ namespace HotelProjectWebApi.Extensions
 			services.AddScoped<ISubscribeDAL, EfSubscribeDal>();
 			services.AddScoped<ISubscribeService, SubscribeManager>();
 			services.AddScoped<ITestimonialDAL, EfTestimonialDal>();
-			services.AddScoped<ITestimonialService, TestimonialManager>(); 
+			services.AddScoped<ITestimonialService, TestimonialManager>();
+			
+			
         }
 	}
 }

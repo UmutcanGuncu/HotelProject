@@ -29,6 +29,8 @@
     <None Remove="DTOS\TestimonialDto\" />
     <None Remove="DTOS\RoomDto\" />
     <None Remove="DTOS\ServiceDto\" />
+    <None Remove="DTOS\LoginDto\" />
+    <None Remove="DTOS\RegisterDto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOS\" />
@@ -37,5 +39,7 @@
     <Folder Include="DTOS\TestimonialDto\" />
     <Folder Include="DTOS\RoomDto\" />
     <Folder Include="DTOS\ServiceDto\" />
+    <Folder Include="DTOS\LoginDto\" />
+    <Folder Include="DTOS\RegisterDto\" />
   </ItemGroup>
 </Project>

@@ -35,6 +35,7 @@
     <None Remove="Dtos\ServiceDto\" />
     <None Remove="Mapping\" />
     <None Remove="Views\Service\" />
+    <None Remove="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Shared\AdminPartialView\" />
@@ -43,5 +44,6 @@
     <Folder Include="Dtos\ServiceDto\" />
     <Folder Include="Mapping\" />
     <Folder Include="Views\Service\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
 </Project>
