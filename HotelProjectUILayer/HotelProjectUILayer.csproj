@@ -36,6 +36,22 @@
     <None Remove="Mapping\" />
     <None Remove="Views\Service\" />
     <None Remove="Views\Login\" />
+    <None Remove="Views\Default\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="ViewComponents\Default\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_Head\" />
+    <None Remove="Views\Shared\Components\_Script\" />
+    <None Remove="Views\Shared\Components\_Navbar\" />
+    <None Remove="Views\Shared\Components\_Footer\" />
+    <None Remove="Views\Shared\Components\_AboutUs\" />
+    <None Remove="Dtos\AboutUsDto\" />
+    <None Remove="Views\Shared\Components\_OurRoom\" />
+    <None Remove="Dtos\RoomDto\" />
+    <None Remove="Views\Shared\Components\_Services\" />
+    <None Remove="Views\Shared\Components\_Testimonial\" />
+    <None Remove="Dtos\TestimonialDto\" />
+    <None Remove="Views\Shared\Components\_Staff\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Shared\AdminPartialView\" />
@@ -45,5 +61,21 @@
     <Folder Include="Mapping\" />
     <Folder Include="Views\Service\" />
     <Folder Include="Views\Login\" />
+    <Folder Include="Views\Default\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="ViewComponents\Default\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_Head\" />
+    <Folder Include="Views\Shared\Components\_Script\" />
+    <Folder Include="Views\Shared\Components\_Navbar\" />
+    <Folder Include="Views\Shared\Components\_Footer\" />
+    <Folder Include="Views\Shared\Components\_AboutUs\" />
+    <Folder Include="Dtos\AboutUsDto\" />
+    <Folder Include="Views\Shared\Components\_OurRoom\" />
+    <Folder Include="Dtos\RoomDto\" />
+    <Folder Include="Views\Shared\Components\_Services\" />
+    <Folder Include="Views\Shared\Components\_Testimonial\" />
+    <Folder Include="Dtos\TestimonialDto\" />
+    <Folder Include="Views\Shared\Components\_Staff\" />
   </ItemGroup>
 </Project>

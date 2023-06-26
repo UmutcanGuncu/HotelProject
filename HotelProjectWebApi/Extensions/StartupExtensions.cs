@@ -23,7 +23,8 @@ namespace HotelProjectWebApi.Extensions
 			services.AddScoped<ISubscribeService, SubscribeManager>();
 			services.AddScoped<ITestimonialDAL, EfTestimonialDal>();
 			services.AddScoped<ITestimonialService, TestimonialManager>();
-			
+			services.AddScoped<IAboutUsDal, EfAboutUsDal>();
+			services.AddScoped<IAboutUsService, AboutUsManager>();
 			
         }
 	}
