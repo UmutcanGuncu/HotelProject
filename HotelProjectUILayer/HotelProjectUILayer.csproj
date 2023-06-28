@@ -29,8 +29,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Views\Shared\AdminPartialView\" />
-    <None Remove="Views\Staff\" />
     <None Remove="Dtos\" />
     <None Remove="Dtos\ServiceDto\" />
     <None Remove="Mapping\" />
@@ -63,10 +61,9 @@
     <None Remove="Areas\Admin\Views\Login\" />
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Areas\Admin\Views\Service\" />
+    <None Remove="Areas\Admin\Views\Staff\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Shared\AdminPartialView\" />
-    <Folder Include="Views\Staff\" />
     <Folder Include="Dtos\" />
     <Folder Include="Dtos\ServiceDto\" />
     <Folder Include="Mapping\" />
@@ -99,5 +96,6 @@
     <Folder Include="Areas\Admin\Views\Login\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Admin\Views\Service\" />
+    <Folder Include="Areas\Admin\Views\Staff\" />
   </ItemGroup>
 </Project>
