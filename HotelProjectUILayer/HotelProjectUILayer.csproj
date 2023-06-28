@@ -34,8 +34,6 @@
     <None Remove="Dtos\" />
     <None Remove="Dtos\ServiceDto\" />
     <None Remove="Mapping\" />
-    <None Remove="Views\Service\" />
-    <None Remove="Views\Login\" />
     <None Remove="Views\Default\" />
     <None Remove="ViewComponents\" />
     <None Remove="ViewComponents\Default\" />
@@ -52,6 +50,19 @@
     <None Remove="Views\Shared\Components\_Testimonial\" />
     <None Remove="Dtos\TestimonialDto\" />
     <None Remove="Views\Shared\Components\_Staff\" />
+    <None Remove="Views\Booking\" />
+    <None Remove="ViewComponents\Booking\" />
+    <None Remove="Views\Shared\Components\_BookingCover\" />
+    <None Remove="Dtos\BookingDto\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Models\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Room\" />
+    <None Remove="Areas\Admin\Views\Login\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Service\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Shared\AdminPartialView\" />
@@ -59,8 +70,6 @@
     <Folder Include="Dtos\" />
     <Folder Include="Dtos\ServiceDto\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Views\Service\" />
-    <Folder Include="Views\Login\" />
     <Folder Include="Views\Default\" />
     <Folder Include="ViewComponents\" />
     <Folder Include="ViewComponents\Default\" />
@@ -77,5 +86,18 @@
     <Folder Include="Views\Shared\Components\_Testimonial\" />
     <Folder Include="Dtos\TestimonialDto\" />
     <Folder Include="Views\Shared\Components\_Staff\" />
+    <Folder Include="Views\Booking\" />
+    <Folder Include="ViewComponents\Booking\" />
+    <Folder Include="Views\Shared\Components\_BookingCover\" />
+    <Folder Include="Dtos\BookingDto\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Room\" />
+    <Folder Include="Areas\Admin\Views\Login\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Service\" />
   </ItemGroup>
 </Project>

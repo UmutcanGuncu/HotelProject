@@ -16,6 +16,66 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Login/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTG9naW4vU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Login/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTG9naW4vU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUm9vbS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX0Zvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX0hlYWRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX05hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_PreloaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX1ByZWxvYWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX1NjcmlwdFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/AdminPartialView/_SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0FkbWluUGFydGlhbFZpZXcvX1NpZGViYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Booking/AddBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9BZGRCb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Booking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,14 +86,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Login/SignIn.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vU2lnbkluLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Login/SignUp.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Service/AddService.cshtml]
@@ -74,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/Components/_AboutUs/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Fib3V0VXMvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/Components/_BookingCover/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Jvb2tpbmdDb3Zlci9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/Components/_Footer/Default.cshtml]
@@ -135,6 +191,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xsjqu1hods
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s

@@ -9,8 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace HotelProjectUILayer.Controllers
+namespace HotelProjectUILayer.Areas.Admin
 {
+    [Area("Admin")]
     public class ServiceController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

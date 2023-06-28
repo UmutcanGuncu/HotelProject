@@ -10,8 +10,9 @@ using HotelProjectUILayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace HotelProjectUILayer.Controllers
+namespace HotelProjectUILayer.Areas.Admin
 {
+    [Area("Admin")]
     public class LoginController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

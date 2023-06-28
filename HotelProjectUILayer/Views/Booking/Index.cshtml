@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_Head");
+
+<body>
+    @await Component.InvokeAsync("_Navbar");
+
+
+    @await Component.InvokeAsync("_BookingCover");
+    <!-- Booking Start -->
+    <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="bg-white shadow" style="padding: 35px;">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-3">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input  class="form-control datetimepicker-input"
+                                           placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Yetişkin</option>
+                                    <option value="1">Yetişkin 1</option>
+                                    <option value="2">Yetişkin 2</option>
+                                    <option value="3">Yetişkin 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Çocuk</option>
+                                    <option value="1">Çocuk 1</option>
+                                    <option value="2">Çocuk 2</option>
+                                    <option value="3">Çocuk 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Booking Start -->
+    @await Html.PartialAsync("/Views/Booking/AddBooking.cshtml");
+    <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 border rounded p-1">
+                <div class="border rounded text-center p-1">
+                    <div class="bg-white rounded text-center p-5">
+                        <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+    <!-- Booking End -->
+    @await Component.InvokeAsync("_Footer");
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    @await Component.InvokeAsync("_Script");
+</body>
+
+</html>

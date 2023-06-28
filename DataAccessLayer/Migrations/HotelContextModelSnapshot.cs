@@ -152,6 +152,47 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Booking", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AdultCount")
+                        .HasColumnType("text");
+
+                    b.Property<string>("CheckIn")
+                        .HasColumnType("text");
+
+                    b.Property<string>("CheckOut")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ChildCount")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Mail")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("RoomCount")
+                        .HasColumnType("text");
+
+                    b.Property<string>("SpecialRequest")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Bookings");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Room", b =>
                 {
                     b.Property<Guid>("Id")

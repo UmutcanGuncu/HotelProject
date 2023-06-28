@@ -19,6 +19,7 @@ namespace DataAccessLayer.Context
         public DbSet<Subscribe> Subscribes { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<AboutUs> AboutUs { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
     }
 }
 
