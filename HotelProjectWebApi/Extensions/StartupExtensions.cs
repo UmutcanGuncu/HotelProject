@@ -27,7 +27,8 @@ namespace HotelProjectWebApi.Extensions
 			services.AddScoped<IAboutUsService, AboutUsManager>();
 			services.AddScoped<IBookingDal, EfBookingDal>();
 			services.AddScoped<IBookingService, BookingManager>();
-			
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
         }
 	}
 }

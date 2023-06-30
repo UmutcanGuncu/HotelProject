@@ -1,0 +1,39 @@
+﻿@model UpdateBookingDto
+<form method="post">
+    <input type="hidden" asp-for="id" />
+    <div class="form-group">
+        <label>Misafir Adı Soyadı</label>
+        <input type="text" asp-for="name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Misafir Mail Adresi</label>
+        <input type="text" asp-for="mail" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Giriş Tarihi</label>
+        <input type="date" asp-for="checkIn" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Çıkış Tarihi</label>
+        <input type="date" asp-for="checkOut" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Yetişkin Sayısı</label>
+        <input type="text" asp-for="adultCount" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Çocuk Sayısı</label>
+        <input type="text" asp-for="childCount" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Oda Sayısı</label>
+        <input type="text" asp-for="roomCount" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Açıklama</label>
+        <input type="text" asp-for="description" class="form-control">
+    </div>
+    <input type="hidden" asp-for="status">
+    <input type="hidden" asp-for="SpecialRequest" />
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

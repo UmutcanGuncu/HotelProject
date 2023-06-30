@@ -14,6 +14,16 @@ namespace BusinessLayer.Concrete
             _bookingDal = bookingDal;
         }
 
+        public void Approved(Guid id)
+        {
+            _bookingDal.Aprovved(id);
+        }
+
+        public void Cancelled(Guid id)
+        {
+            _bookingDal.Cancelled(id);
+        }
+
         public void Delete(Booking t)
         {
             _bookingDal.Delete(t);
@@ -37,6 +47,11 @@ namespace BusinessLayer.Concrete
         public void Update(Booking t)
         {
             _bookingDal.Update(t);
+        }
+
+        public void Waiting(Guid id)
+        {
+            _bookingDal.Waiting(id);
         }
     }
 }

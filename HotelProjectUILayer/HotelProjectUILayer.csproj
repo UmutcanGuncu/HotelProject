@@ -62,6 +62,7 @@
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Areas\Admin\Views\Service\" />
     <None Remove="Areas\Admin\Views\Staff\" />
+    <None Remove="Areas\Admin\Views\BookingAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -97,5 +98,6 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Admin\Views\Service\" />
     <Folder Include="Areas\Admin\Views\Staff\" />
+    <Folder Include="Areas\Admin\Views\BookingAdmin\" />
   </ItemGroup>
 </Project>

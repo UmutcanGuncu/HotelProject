@@ -9,7 +9,7 @@ using BusinessLayer.Abstract;
 using HotelProjectUILayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProjectUILayer.Areas.Admin
+namespace HotelProjectUILayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class StaffController : Controller

@@ -8,10 +8,11 @@ namespace DataAccessLayer.Context
 {
 	public class HotelContext:IdentityDbContext<AppUser,AppRole,Guid>
 	{
-		public HotelContext(DbContextOptions<HotelContext> options):base(options)
+        public HotelContext(DbContextOptions<HotelContext> options):base(options)
 		{
 
 		}
+        
         
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Services> Services { get; set; }
