@@ -50,48 +50,7 @@
     </div>
     <!-- Carousel End -->
     <!-- Booking Start -->
-    <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="bg-white shadow" style="padding: 35px;">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-3">
-                                <div class="date" id="date1" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input"
-                                           placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="date" id="date2" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker" />
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <select class="form-select">
-                                    <option selected>Yetişkin</option>
-                                    <option value="1">Yetişkin 1</option>
-                                    <option value="2">Yetişkin 2</option>
-                                    <option value="3">Yetişkin 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <select class="form-select">
-                                    <option selected>Çocuk</option>
-                                    <option value="1">Çocuk 1</option>
-                                    <option value="2">Çocuk 2</option>
-                                    <option value="3">Çocuk 3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary w-100">Kaydet</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Booking End -->
     <!-- About Start -->
     @await Component.InvokeAsync("_AboutUs");
@@ -107,8 +66,8 @@
                     <h6 class="section-title text-start text-white text-uppercase mb-3">Huzur Dolu Bir Tatil</h6>
                     <h1 class="text-white mb-4">Otelimizi Keşfetmeye Davetlisiniz</h1>
                     <p class="text-white mb-4">Huzur dolu bi tatil için sizi otelimize bekliyoruz. Otelimizde geçireceğiniz her dakikanın güzel olması için elimizden geleni yapacağız.</p>
-                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Odalarımız</a>
-                    <a href="" class="btn btn-light py-md-3 px-md-5">Rezervasyon Yap</a>
+                    <a href="/Room/Index" class="btn btn-primary py-md-3 px-md-5 me-3">Odalarımız</a>
+                    <a href="/Booking/Index" class="btn btn-light py-md-3 px-md-5">Rezervasyon Yap</a>
                 </div>
             </div>
             <div class="col-md-6">

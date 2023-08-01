@@ -63,6 +63,10 @@
     <None Remove="Areas\Admin\Views\Service\" />
     <None Remove="Areas\Admin\Views\Staff\" />
     <None Remove="Areas\Admin\Views\BookingAdmin\" />
+    <None Remove="ViewComponents\Contact\" />
+    <None Remove="Views\Shared\Components\_ContactCoverPartial\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Dtos\ContactDto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -99,5 +103,9 @@
     <Folder Include="Areas\Admin\Views\Service\" />
     <Folder Include="Areas\Admin\Views\Staff\" />
     <Folder Include="Areas\Admin\Views\BookingAdmin\" />
+    <Folder Include="ViewComponents\Contact\" />
+    <Folder Include="Views\Shared\Components\_ContactCoverPartial\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Dtos\ContactDto\" />
   </ItemGroup>
 </Project>
