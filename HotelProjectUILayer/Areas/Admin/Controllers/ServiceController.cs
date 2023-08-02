@@ -51,7 +51,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.PostAsync("https://localhost:7215/api/Service",stringContenct);
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Service/Index");
             }
             return View();
         }
@@ -62,7 +62,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.DeleteAsync($"https://localhost:7215/api/Service/{id}");
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Service/Index");
             }
             return View();
            
@@ -93,7 +93,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.PutAsync("https://localhost:7215/api/Service",stringContent);
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Service/Index");
             }
             return View();
         }

@@ -1,0 +1,36 @@
+﻿@model List<ResultAboutUsDto>
+@{
+    int count = 0;
+}
+
+
+<div class="card-title">
+    <h4>Hakkımızda</h4>
+</div>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Güncelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th>@count</th>
+                    <td>@item.title1</td>
+                    <td>@item.title2</td>
+                    <td><a href="/Admin/AdminAbout/UpdateAbout/@item.id" class="btn btn-outline-primary">Güncelle</a></td>
+                    
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

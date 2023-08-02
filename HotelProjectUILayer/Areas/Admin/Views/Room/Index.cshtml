@@ -1,1 +1,22 @@
-﻿
+﻿@model List<ResultRoomDto>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Oda Numarası</th>
+        <th>Title</th>
+        <th>Fiyat</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.roomNumber</td>
+            <td>@item.title</td>
+            <td>@item.price</td>
+            <td><a href="/Admin/Room/UpdateRoom/@item.id" class="btn btn-outline-primary">Güncelle</a></td>
+            <td><a href="/Admin/Room/DeleteRoom/@item.id" class="btn btn-outline-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/Room/AddRoom" class="btn btn-outline-success">Oda Ekle</a>

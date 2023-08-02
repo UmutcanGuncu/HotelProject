@@ -67,6 +67,9 @@
     <None Remove="Views\Shared\Components\_ContactCoverPartial\" />
     <None Remove="Views\Contact\" />
     <None Remove="Dtos\ContactDto\" />
+    <None Remove="Areas\Admin\Views\AdminAbout\" />
+    <None Remove="Dtos\GuestDto\" />
+    <None Remove="Areas\Admin\Views\Guest\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -107,5 +110,8 @@
     <Folder Include="Views\Shared\Components\_ContactCoverPartial\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Dtos\ContactDto\" />
+    <Folder Include="Areas\Admin\Views\AdminAbout\" />
+    <Folder Include="Dtos\GuestDto\" />
+    <Folder Include="Areas\Admin\Views\Guest\" />
   </ItemGroup>
 </Project>

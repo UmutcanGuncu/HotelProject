@@ -5,7 +5,7 @@ using EntityLayer.Concrete;
 
 namespace DataAccessLayer.Concrete
 {
-    public class EfGuestDal : GenericRepository<Guest>
+    public class EfGuestDal : GenericRepository<Guest>, IGuestDal
     {
         public EfGuestDal(HotelContext context) : base(context)
         {

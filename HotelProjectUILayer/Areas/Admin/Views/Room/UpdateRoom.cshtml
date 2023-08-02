@@ -1,0 +1,37 @@
+﻿@model UpdateRoomDto
+<form method="post">
+    <input type="hidden" asp-for="id" />
+    <div class="form-group">
+        <label>Oda Numarası</label>
+        <input type="text" asp-for="roomNumber" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Kapak Resmi</label>
+        <input type="text" asp-for="coverImage" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Fiyat</label>
+        <input type="number" asp-for="price" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Başlık</label>
+        <input type="text" asp-for="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Açıklama</label>
+        <input type="text" asp-for="description" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Yatak Sayısı</label>
+        <input type="number" asp-for="bedCount" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Banyo Sayısı</label>
+        <input type="number" asp-for="bathCount" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Wifi</label>
+        <input type="text" asp-for="wifi" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

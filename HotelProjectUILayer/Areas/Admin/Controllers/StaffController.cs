@@ -68,9 +68,9 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.PutAsync("https://localhost:7215/api/Staff",stringContent);
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Staff/Index");
             }
-            return RedirectToAction("Index");
+            return Redirect("/Admin/Staff/Index");
         }
         [HttpGet]
         public IActionResult AddStaff()
@@ -86,10 +86,10 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.PostAsync("https://localhost:7215/api/Staff",stringContent);
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Staff/Index");
             }
-            
-            return RedirectToAction("Index");
+
+            return Redirect("/Admin/Staff/Index");
         }
     }
 }
