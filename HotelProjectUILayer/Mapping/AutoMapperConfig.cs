@@ -3,6 +3,7 @@ using AutoMapper;
 using EntityLayer.Concrete;
 using HotelProjectUILayer.Dtos.AboutUsDto;
 using HotelProjectUILayer.Dtos.BookingDto;
+using HotelProjectUILayer.Dtos.GuestDto;
 using HotelProjectUILayer.Dtos.ServiceDto;
 
 namespace HotelProjectUILayer.Mapping
@@ -19,6 +20,9 @@ namespace HotelProjectUILayer.Mapping
             CreateMap<UpdateAboutUsDto, AboutUs>().ReverseMap();
 
 			CreateMap<CreateBookingDto, Booking>().ReverseMap();
+
+			CreateMap<CreateGuestDto, Guest>().ReverseMap();
+			CreateMap<UpdateGuestDto, Guest>().ReverseMap();
         }
 	}
 }

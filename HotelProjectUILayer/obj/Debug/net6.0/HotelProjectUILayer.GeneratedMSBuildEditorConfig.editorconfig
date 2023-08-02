@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va2luZ0FkbWluL1VwZGF0ZUJvb2tpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Guest/AddGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3Vlc3QvQWRkR3Vlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Guest/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3Vlc3QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

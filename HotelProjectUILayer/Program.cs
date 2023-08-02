@@ -1,10 +1,17 @@
 ﻿using DataAccessLayer.Context;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using HotelProjectUILayer.Dtos.GuestDto;
+using HotelProjectUILayer.ValidationRules.Guest;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IValidator<CreateGuestDto>, CreateGuestValidator>();
+builder.Services.AddTransient<IValidator<UpdateGuestDto>, UpdateGuestValidation>();
+builder.Services.AddControllersWithViews().AddFluentValidation();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddHttpClient();
 

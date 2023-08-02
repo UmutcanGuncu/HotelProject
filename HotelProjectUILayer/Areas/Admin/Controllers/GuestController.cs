@@ -49,11 +49,38 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateGuest(UpdateGuestDto model)
         {
-            var client = _clientFactory.CreateClient();
-            var jsonData = JsonSerializer.Serialize(model);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7215/api/Guest", stringContent);
-            return Redirect("/Admin/Guest/Index");
+            if (ModelState.IsValid)
+            {
+                var client = _clientFactory.CreateClient();
+                var jsonData = JsonSerializer.Serialize(model);
+                StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var responseMessage = await client.PutAsync("https://localhost:7215/api/Guest", stringContent);
+                return Redirect("/Admin/Guest/Index");
+            }
+            return View();
+        
+        }
+        [HttpGet]
+        public  IActionResult AddGuest()
+        {
+            
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddGuest(CreateGuestDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                var client = _clientFactory.CreateClient();
+                var jsonData = JsonSerializer.Serialize(model);
+                StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
+                var responseMessage = await client.PostAsync("https://localhost:7215/api/Guest",stringContent);
+                if(responseMessage.IsSuccessStatusCode)
+                {
+                    return Redirect("/Admin/Guest/Index");
+                }
+            }
+            return View();
         }
     }
 }

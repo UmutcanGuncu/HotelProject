@@ -22,6 +22,8 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HotelProjectWebApi\HotelProjectWebApi.csproj">
@@ -70,6 +72,9 @@
     <None Remove="Areas\Admin\Views\AdminAbout\" />
     <None Remove="Dtos\GuestDto\" />
     <None Remove="Areas\Admin\Views\Guest\" />
+    <None Remove="ValidationRules\" />
+    <None Remove="ValidationRules\Room\" />
+    <None Remove="ValidationRules\Guest\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -113,5 +118,8 @@
     <Folder Include="Areas\Admin\Views\AdminAbout\" />
     <Folder Include="Dtos\GuestDto\" />
     <Folder Include="Areas\Admin\Views\Guest\" />
+    <Folder Include="ValidationRules\" />
+    <Folder Include="ValidationRules\Room\" />
+    <Folder Include="ValidationRules\Guest\" />
   </ItemGroup>
 </Project>
