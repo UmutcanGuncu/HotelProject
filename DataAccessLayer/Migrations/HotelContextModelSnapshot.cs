@@ -200,7 +200,7 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Mail")
                         .HasColumnType("text");
@@ -275,6 +275,38 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.SendMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("ReceiverMail")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ReceiverName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("SenderMail")
+                        .HasColumnType("text");
+
+                    b.Property<string>("SenderName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SendMessages");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Services", b =>

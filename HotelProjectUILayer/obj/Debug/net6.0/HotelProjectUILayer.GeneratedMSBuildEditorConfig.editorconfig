@@ -32,6 +32,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQm9va2luZ0FkbWluL1VwZGF0ZUJvb2tpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Contact/AddSendMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9BZGRTZW5kTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Contact/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9JbmJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Contact/ReceiveMessageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9SZWNlaXZlTWVzc2FnZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Contact/SendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9TZW5kQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Contact/SendMessageDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9TZW5kTWVzc2FnZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Areas/Admin/Views/Guest/AddGuest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3Vlc3QvQWRkR3Vlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -202,6 +222,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/_SideBarContactCategoryPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TaWRlQmFyQ29udGFjdENhdGVnb3J5UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/_SideBarContactPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TaWRlQmFyQ29udGFjdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/Views/Shared/_ValidationScriptsPartial.cshtml]

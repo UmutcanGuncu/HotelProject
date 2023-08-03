@@ -37,22 +37,11 @@
     <None Remove="Views\Default\" />
     <None Remove="ViewComponents\" />
     <None Remove="ViewComponents\Default\" />
-    <None Remove="Views\Shared\Components\" />
-    <None Remove="Views\Shared\Components\_Head\" />
-    <None Remove="Views\Shared\Components\_Script\" />
-    <None Remove="Views\Shared\Components\_Navbar\" />
-    <None Remove="Views\Shared\Components\_Footer\" />
-    <None Remove="Views\Shared\Components\_AboutUs\" />
     <None Remove="Dtos\AboutUsDto\" />
-    <None Remove="Views\Shared\Components\_OurRoom\" />
     <None Remove="Dtos\RoomDto\" />
-    <None Remove="Views\Shared\Components\_Services\" />
-    <None Remove="Views\Shared\Components\_Testimonial\" />
     <None Remove="Dtos\TestimonialDto\" />
-    <None Remove="Views\Shared\Components\_Staff\" />
     <None Remove="Views\Booking\" />
     <None Remove="ViewComponents\Booking\" />
-    <None Remove="Views\Shared\Components\_BookingCover\" />
     <None Remove="Dtos\BookingDto\" />
     <None Remove="Areas\" />
     <None Remove="Areas\Admin\" />
@@ -66,7 +55,6 @@
     <None Remove="Areas\Admin\Views\Staff\" />
     <None Remove="Areas\Admin\Views\BookingAdmin\" />
     <None Remove="ViewComponents\Contact\" />
-    <None Remove="Views\Shared\Components\_ContactCoverPartial\" />
     <None Remove="Views\Contact\" />
     <None Remove="Dtos\ContactDto\" />
     <None Remove="Areas\Admin\Views\AdminAbout\" />
@@ -75,6 +63,20 @@
     <None Remove="ValidationRules\" />
     <None Remove="ValidationRules\Room\" />
     <None Remove="ValidationRules\Guest\" />
+    <None Remove="Areas\Admin\Views\Contact\" />
+    <None Remove="Dtos\SendMessageDto\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_AboutUs\" />
+    <None Remove="Views\Shared\Components\_BookingCover\" />
+    <None Remove="Views\Shared\Components\_ContactCoverPartial\" />
+    <None Remove="Views\Shared\Components\_Head\" />
+    <None Remove="Views\Shared\Components\_Footer\" />
+    <None Remove="Views\Shared\Components\_Navbar\" />
+    <None Remove="Views\Shared\Components\_OurRoom\" />
+    <None Remove="Views\Shared\Components\_Script\" />
+    <None Remove="Views\Shared\Components\_Services\" />
+    <None Remove="Views\Shared\Components\_Staff\" />
+    <None Remove="Views\Shared\Components\_Testimonial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -83,22 +85,11 @@
     <Folder Include="Views\Default\" />
     <Folder Include="ViewComponents\" />
     <Folder Include="ViewComponents\Default\" />
-    <Folder Include="Views\Shared\Components\" />
-    <Folder Include="Views\Shared\Components\_Head\" />
-    <Folder Include="Views\Shared\Components\_Script\" />
-    <Folder Include="Views\Shared\Components\_Navbar\" />
-    <Folder Include="Views\Shared\Components\_Footer\" />
-    <Folder Include="Views\Shared\Components\_AboutUs\" />
     <Folder Include="Dtos\AboutUsDto\" />
-    <Folder Include="Views\Shared\Components\_OurRoom\" />
     <Folder Include="Dtos\RoomDto\" />
-    <Folder Include="Views\Shared\Components\_Services\" />
-    <Folder Include="Views\Shared\Components\_Testimonial\" />
     <Folder Include="Dtos\TestimonialDto\" />
-    <Folder Include="Views\Shared\Components\_Staff\" />
     <Folder Include="Views\Booking\" />
     <Folder Include="ViewComponents\Booking\" />
-    <Folder Include="Views\Shared\Components\_BookingCover\" />
     <Folder Include="Dtos\BookingDto\" />
     <Folder Include="Areas\" />
     <Folder Include="Areas\Admin\" />
@@ -112,7 +103,6 @@
     <Folder Include="Areas\Admin\Views\Staff\" />
     <Folder Include="Areas\Admin\Views\BookingAdmin\" />
     <Folder Include="ViewComponents\Contact\" />
-    <Folder Include="Views\Shared\Components\_ContactCoverPartial\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Dtos\ContactDto\" />
     <Folder Include="Areas\Admin\Views\AdminAbout\" />
@@ -121,5 +111,19 @@
     <Folder Include="ValidationRules\" />
     <Folder Include="ValidationRules\Room\" />
     <Folder Include="ValidationRules\Guest\" />
+    <Folder Include="Areas\Admin\Views\Contact\" />
+    <Folder Include="Dtos\SendMessageDto\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_AboutUs\" />
+    <Folder Include="Views\Shared\Components\_BookingCover\" />
+    <Folder Include="Views\Shared\Components\_ContactCoverPartial\" />
+    <Folder Include="Views\Shared\Components\_Head\" />
+    <Folder Include="Views\Shared\Components\_Footer\" />
+    <Folder Include="Views\Shared\Components\_Navbar\" />
+    <Folder Include="Views\Shared\Components\_OurRoom\" />
+    <Folder Include="Views\Shared\Components\_Script\" />
+    <Folder Include="Views\Shared\Components\_Services\" />
+    <Folder Include="Views\Shared\Components\_Staff\" />
+    <Folder Include="Views\Shared\Components\_Testimonial\" />
   </ItemGroup>
 </Project>

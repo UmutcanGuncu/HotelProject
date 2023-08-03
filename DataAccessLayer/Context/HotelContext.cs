@@ -13,7 +13,7 @@ namespace DataAccessLayer.Context
 
 		}
         
-        
+        public DbSet<SendMessage> SendMessages { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Services> Services { get; set; }
         public DbSet<Staff> Staffes { get; set; }
