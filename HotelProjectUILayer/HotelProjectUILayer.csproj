@@ -77,6 +77,7 @@
     <None Remove="Views\Shared\Components\_Services\" />
     <None Remove="Views\Shared\Components\_Staff\" />
     <None Remove="Views\Shared\Components\_Testimonial\" />
+    <None Remove="Areas\Admin\Views\ImageFile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -125,5 +126,6 @@
     <Folder Include="Views\Shared\Components\_Services\" />
     <Folder Include="Views\Shared\Components\_Staff\" />
     <Folder Include="Views\Shared\Components\_Testimonial\" />
+    <Folder Include="Areas\Admin\Views\ImageFile\" />
   </ItemGroup>
 </Project>

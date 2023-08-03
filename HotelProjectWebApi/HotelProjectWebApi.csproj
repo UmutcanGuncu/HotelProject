@@ -42,10 +42,12 @@
     <None Remove="Controllers\" />
     <None Remove="Extensions\" />
     <None Remove="Mapping\" />
+    <None Remove="images\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Extensions\" />
     <Folder Include="Mapping\" />
+    <Folder Include="images\" />
   </ItemGroup>
 </Project>
