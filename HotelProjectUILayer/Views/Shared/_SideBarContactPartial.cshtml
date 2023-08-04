@@ -2,7 +2,9 @@
     Layout = null;
 }
 <div class="mail-list mt-4">
-    <a href="/Admin/Contact/Inbox" class="list-group-item border-0 text-primary p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Gelen Kutusu</b> <span class="badge badge-primary badge-sm float-right m-t-5">40</span> </a>
-    <a href="/Admin/Contact/SendBox" class="list-group-item border-0 p-r-0"><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Giden Kutusu</a>  <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-star-o font-18 align-middle mr-2"></i>Önemli <span class="badge badge-danger badge-sm float-right m-t-5">47</span> </a>
+    <a href="/Admin/Contact/Inbox" class="list-group-item border-0 text-primary p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Gelen Kutusu</b> <span class="badge badge-primary badge-sm float-right m-t-5">@ViewBag.Inbox</span> </a>
+    <a href="/Admin/Contact/SendBox" class="list-group-item border-0 p-r-0"><i class="fa fa-paper-plane font-18 align-middle mr-2"></i><b>Giden Kutusu </b><span class="badge badge-primary badge-sm float-right m-t-5">@ViewBag.SendMessage</span> </a>
+    <a href="#" class="list-group-item border-0 p-r-0">
+    <i class="fa fa-star-o font-18 align-middle mr-2"></i>Önemli <span class="badge badge-danger badge-sm float-right m-t-5">47</span> </a>
     <a href="#" class="list-group-item border-0 p-r-0"><i class="mdi mdi-file-document-box font-18 align-middle mr-2"></i>Taslak</a><a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-trash font-18 align-middle mr-2"></i>Çöp Kutusu</a>
 </div>

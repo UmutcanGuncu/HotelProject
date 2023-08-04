@@ -34,6 +34,11 @@ namespace BusinessLayer.Concrete
             _sendMessageDal.Insert(t);
         }
 
+        public int SendMessageCount()
+        {
+            return _sendMessageDal.SendMessageCount();
+        }
+
         public void Update(SendMessage t)
         {
             _sendMessageDal.Update(t);

@@ -1,13 +1,13 @@
 ﻿using System;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.Context;
+using DataAccessLayer.HotelContext;
 using EntityLayer.Concrete;
 
 namespace DataAccessLayer.Concrete
 {
     public class EfTestimonialDal : GenericRepository<Testimonial>, ITestimonialDAL
     {
-        public EfTestimonialDal(HotelContext context) : base(context)
+        public EfTestimonialDal(HotelContext.Context context) : base(context)
         {
         }
     }

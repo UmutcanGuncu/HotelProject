@@ -1,6 +1,6 @@
 ﻿using System;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.Context;
+using DataAccessLayer.HotelContext;
 using EntityLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -9,8 +9,8 @@ namespace DataAccessLayer.Concrete
 {
     public class EfBookingDal : GenericRepository<Booking>, IBookingDal
     {
-        private readonly HotelContext _context;
-        public EfBookingDal(HotelContext context) : base(context)
+        private readonly Context _context;
+        public EfBookingDal(Context context) : base(context)
         {
             _context = context;
         }

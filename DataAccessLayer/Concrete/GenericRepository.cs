@@ -1,14 +1,14 @@
 ﻿using System;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.Context;
+using DataAccessLayer.HotelContext;
 
 namespace DataAccessLayer.Concrete
 {
     public class GenericRepository<T>: IGenericDal<T> where T:class
     {
-        private readonly HotelContext _context;
+        private readonly HotelContext.Context _context;
 
-        public GenericRepository(HotelContext context)
+        public GenericRepository(HotelContext.Context context)
         {
             _context = context;
         }

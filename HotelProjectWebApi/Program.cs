@@ -2,7 +2,7 @@
 using BusinessLayer.Concrete;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
-using DataAccessLayer.Context;
+using DataAccessLayer.HotelContext;
 using EntityLayer.Concrete;
 using HotelProjectWebApi.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +15,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddDbContext<HotelContext>
+builder.Services.AddDbContext<Context>
     (opt=>opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<HotelContext>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 builder.Services.AddAutoMapper(typeof(StartupBase));
 builder.Services.ScopedExtensions(); // extensions klasöründeki startup extensions class'ında düzenleyebilirsi
 builder.Services.AddEndpointsApiExplorer();

@@ -14,6 +14,11 @@ namespace BusinessLayer.Concrete
             _contactDal = contactDal;
         }
 
+        public int ContactCount()
+        {
+            return _contactDal.ContactCount();
+        }
+
         public void Delete(Contact t)
         {
             _contactDal.Delete(t);

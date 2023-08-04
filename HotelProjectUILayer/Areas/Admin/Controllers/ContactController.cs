@@ -26,7 +26,13 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
         {
             var client = _clientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7215/api/Contact");
-            if(responseMessage.IsSuccessStatusCode)
+            var sendMessage = await client.GetAsync("https://localhost:7215/api/SendMessage/SendMessageCount");
+            var jsonDataSendMessage = await sendMessage.Content.ReadAsStringAsync();
+            ViewBag.SendMessage = jsonDataSendMessage;
+            var inboxMessage = await client.GetAsync("https://localhost:7215/api/Contact/ContactCount");
+            var jsonDataInboxMessage = await inboxMessage.Content.ReadAsStringAsync();
+            ViewBag.Inbox = jsonDataInboxMessage;
+            if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStreamAsync();
                 var values = JsonSerializer.Deserialize<List<InboxContactDto>>(jsonData);
@@ -56,6 +62,13 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
         {
             var client = _clientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7215/api/SendMessage");
+            var sendMessage = await client.GetAsync("https://localhost:7215/api/SendMessage/SendMessageCount");
+            var jsonDataSendMessage = await sendMessage.Content.ReadAsStringAsync();
+            ViewBag.SendMessage = jsonDataSendMessage;
+            var inboxMessage = await client.GetAsync("https://localhost:7215/api/Contact/ContactCount");
+            var jsonDataInboxMessage = await inboxMessage.Content.ReadAsStringAsync();
+            ViewBag.Inbox = jsonDataInboxMessage;
+
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStreamAsync();
@@ -87,6 +100,12 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
                 return View(value);
             }
             return View();
+        }
+        public PartialViewResult _SideBarContactPartial()
+        {
+            
+            
+            return PartialView();
         }
     }
 }

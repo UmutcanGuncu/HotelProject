@@ -1,13 +1,13 @@
 ﻿using System;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.Context;
+using DataAccessLayer.HotelContext;
 using EntityLayer.Concrete;
 
 namespace DataAccessLayer.Concrete
 {
     public class EfStaffDal : GenericRepository<Staff>,IStaffDAL
     {
-        public EfStaffDal(HotelContext context) : base(context)
+        public EfStaffDal(HotelContext.Context context) : base(context)
         {
         }
 
