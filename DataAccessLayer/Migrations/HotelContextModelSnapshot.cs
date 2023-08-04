@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DataAccessLayer.Migrations
 {
-    [DbContext(typeof(HotelContext.Context))]
+    [DbContext(typeof(Context))]
     partial class HotelContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -195,7 +195,7 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ContactId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -208,13 +208,18 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Message")
                         .HasColumnType("text");
 
+                    b.Property<Guid>("MessageCategoryId")
+                        .HasColumnType("uuid");
+
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
                     b.Property<string>("Subject")
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("ContactId");
+
+                    b.HasIndex("MessageCategoryId");
 
                     b.ToTable("Contacts");
                 });
@@ -240,6 +245,20 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Guests");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.MessageCategory", b =>
+                {
+                    b.Property<Guid>("MessageCategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CategoryName")
+                        .HasColumnType("text");
+
+                    b.HasKey("MessageCategoryId");
+
+                    b.ToTable("MessageCategories");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Room", b =>
@@ -498,6 +517,17 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.MessageCategory", "MessageCategory")
+                        .WithMany("Contacts")
+                        .HasForeignKey("MessageCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MessageCategory");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.AppRole", null)
@@ -547,6 +577,11 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.MessageCategory", b =>
+                {
+                    b.Navigation("Contacts");
                 });
 #pragma warning restore 612, 618
         }

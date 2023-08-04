@@ -33,7 +33,8 @@ namespace HotelProjectWebApi.Extensions
 			services.AddScoped<IGuestService, GuestManager>();
 			services.AddScoped<ISendMessageDal, EfSendMessageDal>();
 			services.AddScoped<ISendMessageService, SendMessageManager>();
-
+			services.AddScoped<IMessageCategoryDal, EfMessageCategoryDal>();
+			services.AddScoped<IMessageCategoryService, MessageCategoryManager>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         }

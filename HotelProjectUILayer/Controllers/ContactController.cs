@@ -7,8 +7,10 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using HotelProjectUILayer.Dtos.BookingDto;
 using HotelProjectUILayer.Dtos.ContactDto;
+using HotelProjectUILayer.Dtos.MessageCategoryDto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,9 +26,23 @@ namespace HotelProjectUILayer.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        public IActionResult Index()
+        public async Task <IActionResult> Index()
         {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7215/api/MessageCategory");
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonSerializer.Deserialize<List<ResultMessageCategoryDto>>(jsonData);
+            List<SelectListItem> values2 = (from x in values
+                                            select new SelectListItem
+                                            {
+                                                Text= x.categoryName,
+                                                Value= x.messageCategoryId.ToString()
+                                            }).ToList();
+            ViewBag.v = values2;
+
             return View();
+            
+            
         }
         [HttpGet]
         public PartialViewResult SendMessage()

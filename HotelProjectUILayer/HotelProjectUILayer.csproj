@@ -79,6 +79,7 @@
     <None Remove="Views\Shared\Components\_Testimonial\" />
     <None Remove="Areas\Admin\Views\ImageFile\" />
     <None Remove="Views\ErrorPages\" />
+    <None Remove="Dtos\MessageCategoryDto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -129,5 +130,6 @@
     <Folder Include="Views\Shared\Components\_Testimonial\" />
     <Folder Include="Areas\Admin\Views\ImageFile\" />
     <Folder Include="Views\ErrorPages\" />
+    <Folder Include="Dtos\MessageCategoryDto\" />
   </ItemGroup>
 </Project>
