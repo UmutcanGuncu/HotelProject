@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace HotelProjectUILayer.Controllers
 {
     [AllowAnonymous]
-    public class DefaultController : Controller
+    public class ErrorPagesController : Controller
     {
-       
-        public IActionResult Index()
+        
+        public IActionResult Error404()
         {
             return View();
         }

@@ -7,12 +7,14 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
 using HotelProjectUILayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 
 namespace HotelProjectUILayer.Controllers
 {
+    [AllowAnonymous]
     public class StaffController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

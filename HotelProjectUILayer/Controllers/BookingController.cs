@@ -5,11 +5,13 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using HotelProjectUILayer.Dtos.BookingDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace HotelProjectUILayer.Controllers
 {
+    [AllowAnonymous]
     public class BookingController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;

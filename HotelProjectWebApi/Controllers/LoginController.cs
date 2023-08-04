@@ -29,7 +29,7 @@ namespace HotelProjectWebApi.Controllers
             {
                 AppUser user = new AppUser()
                 {
-                    UserName=model.UserName
+                    Email=model.Email
                    
                 };
               var result=  await _signInManager.PasswordSignInAsync(user,model.Password,true,true);

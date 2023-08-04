@@ -42,7 +42,7 @@ namespace HotelProjectWebApi.Controllers
                 City= model.City,
                 Email=model.Email,
                 PhoneNumber=model.PhoneNumber 
-
+                
 
             };
             //var user = _mapper.Map<AppUser>(model); maplame de hata vae sonra bakacam
