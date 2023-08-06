@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using EntityLayer.Concrete;
 
 namespace DTOLayer.DTOS.RegisterDto
 {
@@ -7,8 +8,7 @@ namespace DTOLayer.DTOS.RegisterDto
     {
         [Required(ErrorMessage = "Ad Boş Geçilemez")]
         [Display(Name="İsim")]
-        
-		public string? Name { get; set; }
+        public string? Name { get; set; }
         [Required(ErrorMessage = "Soyad Boş Geçilemez")]
         public string? Surname { get; set; }
         [Required(ErrorMessage = "Şehir Boş Geçilemez")]
@@ -30,7 +30,8 @@ namespace DTOLayer.DTOS.RegisterDto
         [MinLength(7, ErrorMessage = "Şifreniz Minimum 7 Karakter Olmalıdır")]
         [DataType(DataType.Password)]
         public string? ConfirmPassword { get; set; }
-		
-	}
+        public Guid workLocationId { get; set; }
+        public WorkLocation? WorkLocation { get; set; }
+    }
 }
 

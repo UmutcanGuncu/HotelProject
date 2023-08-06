@@ -1,0 +1,20 @@
+﻿@model List<ResultWorkLocationDto>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Otel Adı</th>
+        <th>Bulunduğu Şehir</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.name</td>
+            <td>@item.city</td>
+            <td><a href="/Admin/WorkLocation/UpdateWorkLocation/@item.workLocationId" class="btn btn-outline-primary">Güncelle</a></td>
+            <td><a href="/Admin/WorkLocation/DeleteWorkLocation/@item.workLocationId" class="btn btn-outline-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/WorkLocation/AddWorkLocation" class="btn btn-outline-success">Otel Ekle</a>

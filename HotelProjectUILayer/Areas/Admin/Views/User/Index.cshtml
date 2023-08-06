@@ -1,0 +1,35 @@
+﻿@model List<AppUser>
+                        <table class="table table-xs mb-0">
+                            <thead>
+                                <tr>
+                                    
+                                    <th>Ad Soyad</th>
+                                    <th>Şehir</th>
+                                    <th>Durum</th>
+                                   <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var item in Model) {
+                                <tr>
+                                    
+                                    <td>@item.Name</td>
+                                    <td>
+                                        <span>@item.City</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="progress" style="height: 6px">
+                                                <div class="progress-bar bg-success" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Sil</td>
+                                    <td>Güncelle</td>
+                                    
+                                </tr>
+                                    }
+                            </tbody>
+                        </table>
+

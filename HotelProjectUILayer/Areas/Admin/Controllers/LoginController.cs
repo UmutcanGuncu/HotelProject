@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 using DTOLayer.DTOS.LoginDto;
 using DTOLayer.DTOS.RegisterDto;
 using EntityLayer.Concrete;
+using HotelProjectUILayer.Dtos.MessageCategoryDto;
+using HotelProjectUILayer.Dtos.WorkLocationDto;
 using HotelProjectUILayer.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HotelProjectUILayer.Areas.Admin.Controllers
 {
@@ -30,8 +32,19 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             _userManager = userManager;
         }
         [HttpGet]
-        public IActionResult SignUp()//Kayıt Ol
+        public async Task<IActionResult> SignUp()//Kayıt Ol
         {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7215/api/WorkLocation");
+            var jsonData = await responseMessage.Content.ReadAsStreamAsync();
+            var values = JsonSerializer.Deserialize<List<ListWorkLocationDto>>(jsonData);
+            List<SelectListItem> values2 = (from x in values
+                                            select new SelectListItem
+                                            {
+                                                Text = x.name,
+                                                Value = x.workLocationId.ToString()
+                                            }).ToList();
+            ViewBag.v = values2;
             return View();
         }
         [HttpPost]
@@ -48,8 +61,9 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
                 Surname = model.Surname,
                 City = model.City,
                 Email = model.Email,
-                PhoneNumber = model.PhoneNumber
-
+                PhoneNumber = model.PhoneNumber,
+                WorkLocationId= model.workLocationId
+                
 
             };
             //var user = _mapper.Map<AppUser>(model); maplame de hata vae sonra bakacam
@@ -65,25 +79,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             }
 
             return Redirect("/Admin/Login/SignIn");
-            /* if(!ModelState.IsValid)
-             {
-                 return View();
-             }
-             var client = _httpClientFactory.CreateClient();
-             var jsonData = JsonSerializer.Serialize(model);
-             var stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
-             var responseMessage = await client.PostAsync("https://localhost:7215/api/Register", stringContent);
-             if(responseMessage.IsSuccessStatusCode)
-             {
-                 return RedirectToAction("Index", "Staff");
-             }
-             else {
-
-                var value=await responseMessage.Content.ReadAsStreamAsync();
-                 var result = JsonSerializer.Deserialize<ContentvM>(value);
-                 ViewBag.Deneme = $"{result}";
-             }
-             return View();*/
+            
         }
         [HttpGet]
         public IActionResult SignIn()//Giriş Yap

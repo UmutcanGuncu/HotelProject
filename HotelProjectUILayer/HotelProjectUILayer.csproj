@@ -80,6 +80,8 @@
     <None Remove="Areas\Admin\Views\ImageFile\" />
     <None Remove="Views\ErrorPages\" />
     <None Remove="Dtos\MessageCategoryDto\" />
+    <None Remove="Areas\Admin\Views\User\" />
+    <None Remove="Dtos\WorkLocationDto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -131,5 +133,8 @@
     <Folder Include="Areas\Admin\Views\ImageFile\" />
     <Folder Include="Views\ErrorPages\" />
     <Folder Include="Dtos\MessageCategoryDto\" />
+    <Folder Include="Areas\Admin\Views\User\" />
+    <Folder Include="Dtos\WorkLocationDto\" />
+    <Folder Include="Areas\Admin\Views\WorkLocation\" />
   </ItemGroup>
 </Project>
