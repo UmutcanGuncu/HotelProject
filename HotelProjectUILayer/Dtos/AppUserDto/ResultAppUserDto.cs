@@ -1,32 +1,28 @@
 ﻿using System;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace HotelProjectUILayer.Dtos.AppUserDto
 {
     public class ResultAppUserDto
     {
-        [JsonPropertyName("name")]
-        public string? Name { get; set; }
-        [JsonPropertyName("surname")]
-        public string? Surname { get; set; }
-        [JsonPropertyName("city")]
-        public string? City { get; set; }
-        [JsonPropertyName("country")]
-        public string? Country { get; set; }
-        [JsonPropertyName("gender")]
-        public string? Gender { get; set; }
-        [JsonPropertyName("workLocationId")]
-        public Guid WorkLocationId { get; set; }
-
+        [JsonProperty("name")]
+        public string? name { get; set; }
+        [JsonProperty("surname")]
+        public string? surname { get; set; }
+        [JsonProperty("city")]
+        public string? city { get; set; }
+        [JsonProperty("country")]
+        public string? country { get; set; }
+        [JsonProperty("gender")]
+        public string? gender { get; set; }
+        [JsonProperty("workLocationId")]
+        public Guid workLocationId { get; set; }
+        [JsonProperty("workLocationName")]
+        public string? workLocationName { get; set; }
 
     }
-    public  class workLocationId
-    {
-        [JsonPropertyName("workLocationId")]
-        public Guid WorkLocationId { get; set; }
-
-        
-    }
+    
 
 }
 

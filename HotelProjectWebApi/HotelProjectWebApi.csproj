@@ -44,11 +44,13 @@
     <None Remove="Extensions\" />
     <None Remove="Mapping\" />
     <None Remove="images\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Extensions\" />
     <Folder Include="Mapping\" />
     <Folder Include="images\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

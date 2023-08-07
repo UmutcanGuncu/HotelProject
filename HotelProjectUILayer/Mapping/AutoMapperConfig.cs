@@ -26,7 +26,7 @@ namespace HotelProjectUILayer.Mapping
 			CreateMap<UpdateGuestDto, Guest>().ReverseMap();
 
 			CreateMap<ResultAppUserDto, AppUser>().ReverseMap();
-			CreateMap<workLocationId, AppUser>().ReverseMap();
+			
         }
 	}
 }

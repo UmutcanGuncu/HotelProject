@@ -6,7 +6,8 @@
                                     
                                     <th>Ad Soyad</th>
                                     <th>Şehir</th>
-                                    <th>Durum</th>
+                                    <th>Çalıştığı Otel</th>
+                                    <th>Şehir/ Ülke</th>
                                     <th>Cinsiyet</th>
                                    
                                 </tr>
@@ -15,30 +16,26 @@
                                 @foreach(var item in Model) {
                                 <tr>
 
-                                    <td>@item.Name @item.Surname</td>
+                                    <td>@item.name @item.surname</td>
                                     <td>
-                                        <span>@item.City</span>
+                                        <span>@item.city</span>
                                     </td>
-
-                                    <td>
-                                        <div>
-                                            <div class="progress" style="height: 6px">
-                                                <div class="progress-bar bg-success" style="width: 50%"></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    @if (item.Gender == "Kadın")
+                                    <td>@item.workLocationName</td>
+                                    
+                                        <td>@item.city / @item.country</td>
+                                    
+                                    @if (item.gender == "Kadın")
                                     {
 
 
                                         <td><i class="fa fa-circle-o text-success mr-2">Kadın</i></td>
                                     }
-                                    @if(item.Gender == "Erkek")
+                                    @if(item.gender == "Erkek")
                                     {
                                         <td><i class="fa fa-circle-o text-warning mr-2">Erkek</i></td>
                                     }
 
-                                    <td>Güncelle</td>
+                                    
 
                                 </tr>
                                     }
