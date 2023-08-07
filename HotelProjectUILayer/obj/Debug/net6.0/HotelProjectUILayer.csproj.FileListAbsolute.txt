@@ -389,3 +389,7 @@
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/FluentValidation.dll
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll

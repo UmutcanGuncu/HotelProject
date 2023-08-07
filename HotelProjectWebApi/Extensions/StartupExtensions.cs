@@ -38,6 +38,8 @@ namespace HotelProjectWebApi.Extensions
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddScoped<IWorkLocationDal, EfWorkLocationDal>();
 			services.AddScoped<IWorkLocationService, WorklocationManager>();
+			services.AddScoped<IAppUserDal, EfAppUserDal>();
+			services.AddScoped<IAppUserService, AppUserManager>();
         }
 	}
 }

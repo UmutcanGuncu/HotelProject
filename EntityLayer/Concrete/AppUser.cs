@@ -10,6 +10,8 @@ namespace EntityLayer.Concrete
 		public string? City { get; set; }
 		public string? Department { get; set; }
 		public string? ImageUrl { get; set; }
+		public string? Gender { get; set; }
+		public string? County { get; set; }
         public Guid WorkLocationId { get; set; }
 		public WorkLocation? WorkLocation { get; set; }
     }

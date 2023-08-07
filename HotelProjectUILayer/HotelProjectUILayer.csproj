@@ -82,6 +82,9 @@
     <None Remove="Dtos\MessageCategoryDto\" />
     <None Remove="Areas\Admin\Views\User\" />
     <None Remove="Dtos\WorkLocationDto\" />
+    <None Remove="Dtos\AppUserDto\" />
+    <None Remove="Areas\Admin\Views\Components\" />
+    <None Remove="Views\Shared\Components\WorkLocationViewComponent\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -136,5 +139,8 @@
     <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="Dtos\WorkLocationDto\" />
     <Folder Include="Areas\Admin\Views\WorkLocation\" />
+    <Folder Include="Dtos\AppUserDto\" />
+    <Folder Include="Areas\Admin\Views\Components\" />
+    <Folder Include="Views\Shared\Components\WorkLocationViewComponent\" />
   </ItemGroup>
 </Project>

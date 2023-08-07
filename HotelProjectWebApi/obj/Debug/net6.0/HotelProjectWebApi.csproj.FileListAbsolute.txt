@@ -55,3 +55,7 @@
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
 /Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/umutcanguncu/Projects/HotelProject/HotelProjectWebApi/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll

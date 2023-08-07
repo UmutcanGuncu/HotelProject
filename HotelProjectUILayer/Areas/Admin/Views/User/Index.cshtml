@@ -1,4 +1,5 @@
-﻿@model List<AppUser>
+﻿@model List<HotelProjectUILayer.Dtos.AppUserDto.ResultAppUserDto>
+
                         <table class="table table-xs mb-0">
                             <thead>
                                 <tr>
@@ -6,18 +7,19 @@
                                     <th>Ad Soyad</th>
                                     <th>Şehir</th>
                                     <th>Durum</th>
-                                   <th>Sil</th>
-                                    <th>Güncelle</th>
+                                    <th>Cinsiyet</th>
+                                   
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach(var item in Model) {
                                 <tr>
-                                    
-                                    <td>@item.Name</td>
+
+                                    <td>@item.Name @item.Surname</td>
                                     <td>
                                         <span>@item.City</span>
                                     </td>
+
                                     <td>
                                         <div>
                                             <div class="progress" style="height: 6px">
@@ -25,9 +27,19 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Sil</td>
+                                    @if (item.Gender == "Kadın")
+                                    {
+
+
+                                        <td><i class="fa fa-circle-o text-success mr-2">Kadın</i></td>
+                                    }
+                                    @if(item.Gender == "Erkek")
+                                    {
+                                        <td><i class="fa fa-circle-o text-warning mr-2">Erkek</i></td>
+                                    }
+
                                     <td>Güncelle</td>
-                                    
+
                                 </tr>
                                     }
                             </tbody>
