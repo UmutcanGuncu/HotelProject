@@ -94,6 +94,7 @@
     <None Remove="Views\Shared\Components\_DashboardLast6Bookings\" />
     <None Remove="Views\Shared\Components\_DashboardScript\" />
     <None Remove="Views\Shared\Components\_DashboardSocialMedia\" />
+    <None Remove="Dtos\FolowersDto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -160,5 +161,6 @@
     <Folder Include="Views\Shared\Components\_DashboardLast6Bookings\" />
     <Folder Include="Views\Shared\Components\_DashboardScript\" />
     <Folder Include="Views\Shared\Components\_DashboardSocialMedia\" />
+    <Folder Include="Dtos\FolowersDto\" />
   </ItemGroup>
 </Project>
