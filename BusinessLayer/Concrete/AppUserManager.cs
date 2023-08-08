@@ -14,6 +14,11 @@ namespace BusinessLayer.Concrete
             _appUserDal = appUserDal;
         }
 
+        public int AppUserCount()
+        {
+           return _appUserDal.AppUserCount();
+        }
+
         public void Delete(AppUser t)
         {
             _appUserDal.Delete(t);

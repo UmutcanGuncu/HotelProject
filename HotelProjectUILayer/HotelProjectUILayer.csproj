@@ -85,6 +85,15 @@
     <None Remove="Dtos\AppUserDto\" />
     <None Remove="Areas\Admin\Views\Components\" />
     <None Remove="Views\Shared\Components\WorkLocationViewComponent\" />
+    <None Remove="ViewComponents\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Views\Shared\Components\_DashboardHead\" />
+    <None Remove="Views\Shared\Components\_DashboardWidget\" />
+    <None Remove="Views\Shared\Components\_DashboardLast4StaffList\" />
+    <None Remove="Dtos\StaffDto\" />
+    <None Remove="Views\Shared\Components\_DashboardLast6Bookings\" />
+    <None Remove="Views\Shared\Components\_DashboardScript\" />
+    <None Remove="Views\Shared\Components\_DashboardSocialMedia\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -142,5 +151,14 @@
     <Folder Include="Dtos\AppUserDto\" />
     <Folder Include="Areas\Admin\Views\Components\" />
     <Folder Include="Views\Shared\Components\WorkLocationViewComponent\" />
+    <Folder Include="ViewComponents\Dashboard\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Views\Shared\Components\_DashboardHead\" />
+    <Folder Include="Views\Shared\Components\_DashboardWidget\" />
+    <Folder Include="Views\Shared\Components\_DashboardLast4StaffList\" />
+    <Folder Include="Dtos\StaffDto\" />
+    <Folder Include="Views\Shared\Components\_DashboardLast6Bookings\" />
+    <Folder Include="Views\Shared\Components\_DashboardScript\" />
+    <Folder Include="Views\Shared\Components\_DashboardSocialMedia\" />
   </ItemGroup>
 </Project>

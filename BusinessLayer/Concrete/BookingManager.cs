@@ -19,6 +19,11 @@ namespace BusinessLayer.Concrete
             _bookingDal.Aprovved(id);
         }
 
+        public int BookingCount()
+        {
+            return _bookingDal.BookingCount();
+        }
+
         public void Cancelled(Guid id)
         {
             _bookingDal.Cancelled(id);
@@ -42,6 +47,11 @@ namespace BusinessLayer.Concrete
         public void Insert(Booking t)
         {
             _bookingDal.Insert(t);
+        }
+
+        public List<Booking> ListBookingLast6()
+        {
+            return _bookingDal.ListBookingLast6();
         }
 
         public void Update(Booking t)

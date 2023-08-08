@@ -7,8 +7,16 @@ namespace DataAccessLayer.Concrete
 {
     public class EFRoomDal : GenericRepository<Room>, IRoomDal
     {
-        public EFRoomDal(HotelContext.Context context) : base(context)
+        private readonly Context _context;
+        public EFRoomDal(Context context) : base(context)
         {
+            _context = context;
+        }
+
+        public int RoomCount()
+        {
+            var value = _context.Rooms.Count();
+            return value;
         }
     }
 }

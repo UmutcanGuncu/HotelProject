@@ -8,6 +8,9 @@ namespace BusinessLayer.Abstract
 		public void Approved(Guid id);
 		public void Cancelled(Guid id);
 		public void Waiting(Guid id);
-	}
+		public int BookingCount();
+        public List<Booking> ListBookingLast6();
+
+    }
 }
 

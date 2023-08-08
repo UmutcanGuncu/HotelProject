@@ -13,6 +13,12 @@ namespace DataAccessLayer.Concrete
             _context = context;
         }
 
+        public int AppUserCount()
+        {
+            var value =_context.Users.Count();
+            return value;
+        }
+
         public List<AppUser> UserListWithLocation()
         {
             return _context.Users.Include(x => x.WorkLocationId).ToList();

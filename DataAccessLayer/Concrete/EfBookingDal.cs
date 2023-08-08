@@ -24,11 +24,22 @@ namespace DataAccessLayer.Concrete
                 _context.SaveChanges();
         }
 
+        public int BookingCount()
+        {
+            var value=_context.Bookings.Count();
+            return value;
+        }
+
         public void Cancelled(Guid id)
         {
             var item = _context.Bookings.Where(x => x.Id == id).FirstOrDefault();
             item.Status = "İptal Edildi";
             _context.SaveChanges();
+        }
+
+        public List<Booking> ListBookingLast6()
+        {
+            return _context.Bookings.OrderByDescending(x=>x.CheckIn).Take(6).ToList();
         }
 
         public void Waiting(Guid id)

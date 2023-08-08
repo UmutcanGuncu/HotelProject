@@ -34,6 +34,11 @@ namespace BusinessLayer.Concrete
             _roomDal.Insert(t);
         }
 
+        public int RoomCount()
+        {
+            return _roomDal.RoomCount();
+        }
+
         public void Update(Room t)
         {
             _roomDal.Update(t);

@@ -187,6 +187,12 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ChildCount")
                         .HasColumnType("text");
 
+                    b.Property<string>("City")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("text");
+
                     b.Property<string>("Description")
                         .HasColumnType("text");
 

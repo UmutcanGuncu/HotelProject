@@ -1,0 +1,22 @@
+﻿
+@await Component.InvokeAsync("_DashboardHead")
+<div class="container-fluid mt-3">
+
+    @await Component.InvokeAsync("_DashboardWidget")
+
+
+
+
+
+    @await Component.InvokeAsync("_DashboardLast4StaffList")
+
+
+    @await Component.InvokeAsync("_DashboardLast6Bookings")
+
+
+
+
+    @await Component.InvokeAsync("_DashboardSocialMedia")
+</div>
+<!-- #/ container -->
+@await Component.InvokeAsync("_DashboardScript")

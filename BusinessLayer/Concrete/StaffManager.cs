@@ -29,9 +29,19 @@ namespace BusinessLayer.Concrete
             return _staffDal.GetList();
         }
 
+        public int GetStaffCount()
+        {
+            return _staffDal.GetStaffCount();
+        }
+
         public void Insert(Staff t)
         {
             _staffDal.Insert(t);
+        }
+
+        public List<Staff> Last4Staff()
+        {
+            return _staffDal.Last4Staff();
         }
 
         public void Update(Staff t)

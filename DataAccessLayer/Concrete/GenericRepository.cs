@@ -6,9 +6,9 @@ namespace DataAccessLayer.Concrete
 {
     public class GenericRepository<T>: IGenericDal<T> where T:class
     {
-        private readonly HotelContext.Context _context;
+        private readonly Context _context;
 
-        public GenericRepository(HotelContext.Context context)
+        public GenericRepository(Context context)
         {
             _context = context;
         }
@@ -24,6 +24,7 @@ namespace DataAccessLayer.Concrete
             return _context.Set<T>().Find(id);
         }
 
+        
         public List<T> GetList()
         {
             return _context.Set<T>().ToList();
@@ -40,6 +41,8 @@ namespace DataAccessLayer.Concrete
             _context.Update(t);
             _context.SaveChanges();
         }
+
+        
     }
 }
 

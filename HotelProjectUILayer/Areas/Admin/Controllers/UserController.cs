@@ -19,7 +19,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
 
         public UserController(IHttpClientFactory httpClientFactory)
         {
-            _httpClientFactory = httpClientFactory;
+            _httpClientFactory = httpClientFactory; 
         }
 
         public async Task <IActionResult> Index()

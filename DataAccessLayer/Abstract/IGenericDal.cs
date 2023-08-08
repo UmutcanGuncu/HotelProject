@@ -8,6 +8,7 @@ namespace DataAccessLayer.Abstract
 		void Update(T t);
 		void Insert(T t);
 		T GetById(Guid id);
+		
 	}
 }
 
