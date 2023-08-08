@@ -82,6 +82,12 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             }
             return View();
         }
+        public async Task<IActionResult> DeleteGuest(Guid id)
+        {
+            var client = _clientFactory.CreateClient();
+            var responseMessage = await client.DeleteAsync($"https://localhost:7215/api/Guest/{id}");
+            return Redirect("/Admin/Guest/Index");
+        }
     }
 }
 

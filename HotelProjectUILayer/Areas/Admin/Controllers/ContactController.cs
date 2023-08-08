@@ -95,7 +95,7 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.GetAsync($"https://localhost:7215/api/Contact/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
-                var jsonData = await responseMessage.Content.ReadAsStreamAsync();
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
                 var value = JsonSerializer.Deserialize<ReceiveMessageByIdDto>(jsonData);
                 return View(value);
             }

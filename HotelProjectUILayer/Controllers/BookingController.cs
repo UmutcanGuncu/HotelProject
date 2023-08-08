@@ -33,7 +33,7 @@ namespace HotelProjectUILayer.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBooking(CreateBookingDto model)
         {
-            model.status = "Onay Bekliyor";
+            model.Status = "Onay Bekliyor";
             var client = _httpClientFactory.CreateClient();
             
             var jsonData = JsonSerializer.Serialize(model);

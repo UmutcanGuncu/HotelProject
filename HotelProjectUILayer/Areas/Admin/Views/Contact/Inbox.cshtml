@@ -17,14 +17,11 @@
 
                         </div>
                     </div>
-
-
-
                     <div class="email-list m-t-15">
                         @foreach (var item in Model)
                         {
                             <div class="message">
-                                <a href="/Admin/Contact/ReceiveMessageDetails/@item.id">
+                                <a href="/Admin/Contact/ReceiveMessageDetails/@item.Id">
                                     <div class="col-mail col-mail-1">
                                         <div class="email-checkbox">
                                             <input type="checkbox" id="chk2">
@@ -32,8 +29,8 @@
                                         </div><span class="star-toggle ti-star"></span>
                                     </div>
                                     <div class="col-mail col-mail-2">
-                                        <div class="subject "> <span class="text-start text-danger">@item.name</span>               @item.subject </div>
-                                        <div class="date">@(((DateTime)item.date).ToString("dd-MMM-yyyy"))</div>
+                                        <div class="subject "> <span class="text-start text-danger">@item.Name</span>               @item.Subject </div>
+                                        <div class="date">@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</div>
                                     </div>
 
 

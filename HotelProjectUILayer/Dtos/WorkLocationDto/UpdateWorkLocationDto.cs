@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Text.Json.Serialization;
+
 namespace HotelProjectUILayer.Dtos.WorkLocationDto
 {
 	public class UpdateWorkLocationDto
 	{
-        public Guid workLocationId { get; set; } 
-        public string? name { get; set; }
-        public string? city { get; set; }
+        [JsonPropertyName("workLocationId")]
+        public Guid WorkLocationId { get; set; }
+        [JsonPropertyName("workLocationName")]
+        public string? Name { get; set; }
+        [JsonPropertyName("city")]
+        public string? City { get; set; }
     }
 }
 

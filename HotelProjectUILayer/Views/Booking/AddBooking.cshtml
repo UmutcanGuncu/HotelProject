@@ -28,40 +28,52 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" asp-for="name" placeholder="Adınız Soyadınız">
+                                    <input type="text" class="form-control" asp-for="Name" placeholder="Adınız Soyadınız">
                                     <label for="name">Adınız Soyadınız</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" asp-for="mail" placeholder="E Posta Adresiniz">
+                                    <input type="email" class="form-control" asp-for="Mail" placeholder="E Posta Adresiniz">
                                     <label for="email">E Posta Adresiniz</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating date" id="date3" data-target-input="nearest">
-                                    <input type="date" class="form-control datetimepicker-input" asp-for="checkIn"  placeholder="Check In" data-target="#date3" />
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" asp-for="City" placeholder="Şehir">
+                                    <label for="city">Şehir</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" asp-for="Country" placeholder="Ülke">
+                                    <label for="country">Ülke</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date">
+                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckIn" placeholder="Check In" data-target="#date3" />
                                     <label for="checkin">Check In</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-floating date" id="date4" data-target-input="nearest">
-                                    <input type="date"class="form-control datetimepicker-input" asp-for="checkOut" placeholder="Check Out" data-target="#date4"/>
+                                <div class="form-floating date">
+                                    <input type="date" class="form-control datetimepicker-input" asp-for="CheckOut" placeholder="Check Out" data-target="#date4" />
                                     <label for="checkout">Check Out</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select" asp-for="adultCount" id="select1">
+                                    <select class="form-select" asp-for="AdultCount" id="select1">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
-                                     </select>
+                                    </select>
                                     <label for="select1">Yetişkin Sayısı</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select" asp-for="childCount"id="select2">
+                                    <select class="form-select" asp-for="ChildCount" id="select2">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -71,7 +83,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <select class="form-select" asp-for="roomCount" id="select3">
+                                    <select class="form-select" asp-for="RoomCount" id="select3">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -81,7 +93,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Special Request" asp-for="specialRequest" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Special Request" asp-for="SpecialRequest" id="message" style="height: 100px"></textarea>
                                     <label for="message">Özel İstekleriniz</label>
                                 </div>
                             </div>

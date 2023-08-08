@@ -28,6 +28,12 @@ namespace HotelProjectWebApi.Controllers
             var values = _staffService.GetList();
             return Ok(values);
         }
+        [HttpGet("Last4Staff")]
+        public IActionResult Last4Staff()
+        {
+            var values = _staffService.Last4Staff();
+            return Ok(values);
+        }
         [HttpPost]
         public IActionResult AddStaff(Staff staff)
         {
@@ -53,6 +59,7 @@ namespace HotelProjectWebApi.Controllers
             var currentValue=_staffService.GetById(id);
             return Ok(currentValue);
         }
+
     }
 }
 

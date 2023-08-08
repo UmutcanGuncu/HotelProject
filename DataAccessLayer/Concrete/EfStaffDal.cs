@@ -21,7 +21,7 @@ namespace DataAccessLayer.Concrete
 
         public List<Staff> Last4Staff()
         {
-           return _context.Staffes.Take(4).ToList();
+           return _context.Staffes.OrderBy(x=>x.Name).Take(4).ToList();
         }
     }
 }

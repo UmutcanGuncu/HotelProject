@@ -21,32 +21,41 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" asp-for="Surname" placeholder="Soyadınız" required>
-                                    <span asp-validation-for="Surname"></span>
+                                    <span asp-validation-for="Surname" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adınız" required>
-                                    <span asp-validation-for="UserName"></span>
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
                                 </div>
-                                <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject">Otel Seçiniz</label>
                                     <div class="form-floating">
                                         @Html.DropDownListFor(x => x.workLocationId, (List<SelectListItem>)ViewBag.v, new
                                    {
                                        @class = "form-control"
                                    })
-                                        <label for="subject">Otel Seçiniz</label>
+
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <input asp-for="Email" class="form-control" placeholder="Email" required>
-                                    <span asp-validation-for="Email"></span>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
                                     <input asp-for="PhoneNumber" class="form-control" placeholder="Telefon Numaranız" required>
-                                    <span asp-validation-for="PhoneNumber"></span>
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" asp-for="City" placeholder="Şehir" required>
-                                    <span asp-validation-for="City"></span>
+                                    <span asp-validation-for="City" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="Country" placeholder="Ülke" required>
+                                    <span asp-validation-for="Country" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="Gender" placeholder="Cinsiyet" required>
+                                    <span asp-validation-for="Gender" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
                                     <input asp-for="Password" class="form-control" placeholder="Şifre" required>
@@ -59,7 +68,7 @@
                                 <button class="btn login-form__btn submit w-100">Kayıt Ol</button>
                             </form>
                             <p class="mt-5 login-form__footer">Have account <a href="page-login.html" class="text-primary">Sign Up </a> now</p>
-                            </p>
+                            
                         </div>
                     </div>
                 </div>

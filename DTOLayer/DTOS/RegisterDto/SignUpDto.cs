@@ -13,6 +13,10 @@ namespace DTOLayer.DTOS.RegisterDto
         public string? Surname { get; set; }
         [Required(ErrorMessage = "Şehir Boş Geçilemez")]
         public string? City { get; set; }
+        [Required(ErrorMessage = "Ülke Boş Geçilemez")]
+        public string? Country { get; set; }
+        [Required(ErrorMessage = "Ülke Boş Geçilemez")]
+        public string? Gender { get; set; }
         [Required(ErrorMessage = "Kullanıcı Adı Boş Geçilemez")]
         public string? UserName { get; set; }
         [Required(ErrorMessage = "E Posta Boş Geçilemez")]

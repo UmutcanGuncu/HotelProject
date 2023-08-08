@@ -41,8 +41,8 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             List<SelectListItem> values2 = (from x in values
                                             select new SelectListItem
                                             {
-                                                Text = x.name,
-                                                Value = x.workLocationId.ToString()
+                                                Text = x.Name,
+                                                Value = x.WorkLocationId.ToString()
                                             }).ToList();
             ViewBag.v = values2;
             return View();
@@ -62,7 +62,9 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
                 City = model.City,
                 Email = model.Email,
                 PhoneNumber = model.PhoneNumber,
-                WorkLocationId= model.workLocationId
+                WorkLocationId= model.workLocationId,
+                Country = model.Country,
+                Gender = model.Gender
                 
 
             };

@@ -42,9 +42,9 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
             var responseMessage = await client.DeleteAsync($"https://localhost:7215/api/Staff/{id}");
             if(responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("/Admin/Staff/Index");
             }
-            return RedirectToAction("Index");
+            return Redirect("/Admin/Staff/Index");
         }
         [HttpGet]
         public async Task<IActionResult> UpdateStaff(Guid id)
