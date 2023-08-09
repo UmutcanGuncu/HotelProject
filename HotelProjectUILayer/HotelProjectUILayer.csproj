@@ -95,6 +95,10 @@
     <None Remove="Views\Shared\Components\_DashboardScript\" />
     <None Remove="Views\Shared\Components\_DashboardSocialMedia\" />
     <None Remove="Dtos\FolowersDto\" />
+    <None Remove="Areas\Admin\Views\Role\" />
+    <None Remove="Dtos\RoleDto\" />
+    <None Remove="Areas\Admin\Views\RoleAssign\" />
+    <None Remove="Areas\Admin\Views\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -162,5 +166,9 @@
     <Folder Include="Views\Shared\Components\_DashboardScript\" />
     <Folder Include="Views\Shared\Components\_DashboardSocialMedia\" />
     <Folder Include="Dtos\FolowersDto\" />
+    <Folder Include="Areas\Admin\Views\Role\" />
+    <Folder Include="Dtos\RoleDto\" />
+    <Folder Include="Areas\Admin\Views\RoleAssign\" />
+    <Folder Include="Areas\Admin\Views\Settings\" />
   </ItemGroup>
 </Project>

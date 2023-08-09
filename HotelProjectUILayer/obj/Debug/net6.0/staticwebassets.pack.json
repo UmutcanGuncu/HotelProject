@@ -20869,8 +20869,12 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/.DS_Store",
-      "PackagePath": "staticwebassets/hotel-html-template/.DS_Store"
+      "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/LICENSE.txt",
+      "PackagePath": "staticwebassets/hotel-html-template/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/READ-ME.txt",
+      "PackagePath": "staticwebassets/hotel-html-template/READ-ME.txt"
     },
     {
       "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/about.html",
@@ -20891,6 +20895,10 @@
     {
       "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/css/style.css",
       "PackagePath": "staticwebassets/hotel-html-template/css/style.css"
+    },
+    {
+      "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/hotel-html-template.jpg",
+      "PackagePath": "staticwebassets/hotel-html-template/hotel-html-template.jpg"
     },
     {
       "Id": "/Users/umutcanguncu/Projects/HotelProject/HotelProjectUILayer/wwwroot/hotel-html-template/img/about-1.jpg",

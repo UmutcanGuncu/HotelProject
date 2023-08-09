@@ -107,19 +107,12 @@ namespace HotelProjectUILayer.Areas.Admin.Controllers
                 }
             }
             return View();
-            /*if(!ModelState.IsValid)
-            {
-                return View();
-            }
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonSerializer.Serialize(model);
-            var stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7215/api/Login", stringContent);
-            if(responseMessage.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index","Staff");
-            }
-            return View();*/
+            
+        }
+        public async Task<IActionResult> SignOut()
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect("/Default/Index");
         }
     }
 }
