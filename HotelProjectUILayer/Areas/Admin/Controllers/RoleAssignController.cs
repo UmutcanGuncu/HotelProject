@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EntityLayer.Concrete;
 using HotelProjectUILayer.Dtos.RoleDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HotelProjectUILayer.Areas.Admin.Controllers
 {
     [Area(nameof(Admin))]
+    [Authorize(Roles ="Admin")]
     public class RoleAssignController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
